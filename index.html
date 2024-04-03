@@ -1,289 +1,417 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/FINAL.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio</title>
+  <link rel="shortcut icon" href="SRC/img/Ajolotito.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--Animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/style.css">
 
-  <title>Centro Comunitario Ganesh</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    body {
-      min-height: 100%;
-    }
-
-    html {
-      height: 100%;
-    }
-
-    .grid-container>* {
-      text-align: center;
-      border-radius: 15px;
-      padding: 10px;
-    }
-
-    .header {
-      grid-area: header;
-
-    }
-
-    .navbar {
-      grid-area: navbar;
-
-    }
-
-    .sidebar {
-      grid-area: sidebar;
-
-    }
-
-    .main {
-      grid-area: main;
-
-    }
-
-    .footer {
-      grid-area: footer;
-
-    }
-
-    /*Teléfono*/
-    .grid-container {
-      display: grid;
-      gap: 10px;
-      grid-template-areas:
-        "header"
-        "navbar"
-        "sidebar"
-        "main"
-        "footer"
-      ;
-    }
-
-    /*Para tablet*/
-    @media(min-width:768px) {
-      .grid-container {
-        grid-template-columns: auto;
-        grid-template-areas:
-          "header header"
-          "navbar navbar"
-          "sidebar sidebar"
-          "main main"
-          "footer footer";
-      }
-    }
-
-    /*Para escritorio*/
-    @media(min-width:900px) {
-      .grid-container {
-        grid-template-columns: auto;
-        grid-template-areas:
-          "header header header"
-          "navbar navbar navbar"
-          "sidebar sidebar sidebar"
-          "main main main"
-          "footer footer footer";
-      }
-    }
-  </style>
 </head>
 
-<body class="grid-container">
-  <header class="header">
-    <div class="logo ">
-      <img
-        src="SRC/img/logo ganesh.png"
-        width="200px">
-      <h1>CENTRO COMUNITARIO GANESH </h1>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar" style="background-image: url(src/img/geo-nav.png)">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><strong>Ana Cristina Hernández.</strong></a>
+    <button class="navbar-toggler" id="menuButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>  
+    <div class="collapse navbar-collapse text-center text-lg-start justify-content-lg-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#inicio"><b>Inicio</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre-mi"><strong>Sobre mí</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills"><strong>Skills</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos"><b>Proyectos</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto" id="btnCont">✆ Contacto</a>
+        </li>
+      </ul>
     </div>
-  </header>
-  <nav class="navbar">
-    <a href="" class="ln">Inicio</a>
-    <a href="#somosquien" class="ln"> ¿Quienes somos?</a>
-    <a href="#reso" class="ln"> Recursos</a>
-  </nav>
-  <aside class="sidebar">
-    <div class="cards">
-      <div class="card1">
-        <img class=imgw6
-          src="https://img.freepik.com/vector-gratis/fondo-plano-dia-amistad-grupo-amigos_23-2149481321.jpg?size=626&ext=jpg&ga=GA1.1.1016474677.1697068800&semt=ais"
-          width="450px" height="250px">
-        <img class=imgw6
-          src="https://www.unotv.com/uploads/2023/03/por-que-no-se-debe-felicitar-a-las-mujeres-el-8m-081756.jpg"
-          width="450px">
-      </div>
-      <div class="card2">
-        <p>Se trabaja con un equipo multidisciplinario de profesionales desde mayo de 2013 y continúa a la fecha.
+  </div>
+</nav>
 
-          A través del análisis de la historia del Dispositivo y de la construcción de un diagnóstico territorial, se
-          presentó la necesidad de que exista un Dispositivo en el barrio que se posicione desde el enfoque de la
-          perspectiva de género.
+  <!-- CONTENEDOR 1: DATOS PERSONALES -->
+  <div class="container-fluid-datosp">
+    <div class="row">
+      <div class="col-md-9" style="padding: 5%;">
+        <button class="btn btn-dark" id="inicio">Portafolio</button>
+        <h1 class="pt-3 animate__animated animate__backInLeft" style="font-weight: 50;">ANA CRISTINA HERNÁNDEZ MORENO</h1>
+        <h2 class="textTyped">
+          <span class="typed"></span>
+          <span aria-hidden="true">|</span>
+        </h2>
+        <p>Soy una apasionada de la tecnología, el desarrollo y la investigación.</p>
+        <button class="btn btn-secondary" id="btnDownloadCV">Descargar CV</button>
+        <a href="#proyectos" class="btn btn">Proyectos &#10230;</a>
 
-          Se implementa una estrategia de Intervención Comunitaria que tiene como objetivo abordar el sufrimiento
-          social, en particular de aquellas mujeres que se encuentran asociadas a situaciones de violencia, embarazo
-          adolescente, consumo de sustancias psicoactivas, o que presentan dificultades en la accesibilidad a la
-          educación y/o salud. La intervención se orienta a la promoción del fortalecimiento individual y grupal de las
-          mujeres.
+        <div class="card mt-3" id="card-inicio">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card-body text-center">
+                <h5 class="card-title" id="inicio-titulos">Perfil de LinkedIn</h5>
+                <a href="https://www.linkedin.com/in/anachernandezmoreno/">
+                  <img src="src/img/linkedin.png" class="img-fluid" style="width: 40px; height: 40px;">
+                </a>
 
-          El espacio promueve la integración social de las mujeres, el fortalecimiento de sus redes subjetivas, así como
-          sus habilidades psicosociales, mejorando de esta manera su calidad de vida y la de la comunidad. Se
-          desarrollan actividades de promoción de la salud, de prevención y de reducción de riesgos y daños. </p>
-      </div>
-    </div>
-  </aside>
 
-  <article class="main">
-    <h1 id="somosquien">¿Quiénes somos?</h1>
-    <div class="container4">
-      <div class="card4">
-        <div>
-          <img class="imgw4" src="./SRC/img/Misión.png" alt="" width="300px" height="250px">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body text-center">
+                <h5 class="card-title" id="inicio-titulos">hernandezmorenoanacristina@gmail.com</h5>
+                <a href="mailto:hernandezmorenoanacristina@gmail.com">
+                  <img src="src/img/gmail.png" class="img-fluid" style="width: 40px; height: 40px;">
+                </a>
 
-          <div class="info4">
-            <h2>Misión</h2>
-            <p>Ayudar a mujeres vulnerables que hayan sufrido violencia a desarrollarse y encontrar mejores
-              oportunidades.</p>
+
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card-body text-center">
+                <h5 class="card-title" id="inicio-titulos">Perfil de GitHub</h5>
+                <a href="https://github.com/anachm">
+                  <img src="src/img/github.png" class="img-fluid" style="width: 40px; height: 40px;">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-      <div class="card4">
-        <div>
-          <img class="imgw4" src="./SRC/img/Visión.png" alt="" width="300px" height="250px">
+      <div class="col-md-3 text-center">
+        <img src="src/img/achm cont.png" class="img-fluid" style="margin: 0;" width="360px" height="466px" id="img-badge">
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR 2: SOBRE MÍ -->
+  <div id="container-me">
+    <div class="card" style="border-radius: 20px">
+      <div class="card-header" id="sobre-mi">
+        <h3>Sobre Mí</h3>
+        <p>"Nunca fracasas hasta que dejas de intentarlo." - Albert Einstein</p>
+      </div>
+
+      <div class="card-body" id="body-me">
+
+        <div class="card" id="cards-me">
+          <h9 id="tit-me"><b>Perfil Personal</b></h9>
+          <p>Como licenciada en Química, mi carrera profesional estuvo marcada por mi pasión por la resolución de
+            problemas y el pensamiento analítico, lo que me llevó a desarrollar habilidades sólidas en la investigación
+            y la entrega de resultados precisos. A lo largo de mi trayectoria, me di cuenta de mi profundo interés por
+            el mundo de la tecnología, especialmente en el desarrollo web y diseño.</p>
         </div>
-        <div class="info4">
-          <h2>Visión</h2>
-          <p>Encontrar nuevas oportunidades que les permitirá mejorar su calidad de vida y
-            favorecerá su integración social.</p>
+
+        <div class="row">
+          <div class="col-sm-6 mt-3 mb-sm-0">
+            <div class="card" id="cards-me">
+              <h9 id="tit-me"><b>Nuevos desafíos</b></h9>
+              <p class="card-text">Mi transición hacia la tecnología se basa en mi amor por el aprendizaje y en la
+                convicción de que puedo aplicar mis habilidades analíticas y mi capacidad para abordar problemas
+                complejos en un nuevo contexto. Durante mis años de investigación en Química, desarrollé competencias
+                valiosas, como el análisis de datos, la interpretación de resultados y la comunicación efectiva. Estas
+                habilidades son transferibles y esenciales en el desarrollo web, donde la toma de decisiones basada en
+                datos y la comunicación clara son fundamentales.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-3">
+            <div class="card" id="cards-me">
+              <h9 id="tit-me"><b>Motivación</b></h9>
+              <p class="card-text">Lo que más me entusiasma de esta transición es la oportunidad de enfrentar nuevos
+                desafíos y aplicar mis habilidades analíticas a la creación de soluciones tecnológicas innovadoras.
+                Estoy ansiosa por combinar mi experiencia en investigación con mis nuevos conocimientos en desarrollo
+                web y diseño. Estoy segura de que mi enfoque meticuloso y mi pasión por la tecnología me permitirán
+                hacer una contribución valiosa en este emocionante campo.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="grid-container5">
-      <h1>¿Qué hacemos?</h1>
-      <div class="container5">
-        <div class="card5">
-          <img src="./src/img/anacampos1.png" class="imgw5" alt="Proceso terapeutico" height="250px" width="250px">
-          <p class="p5">Te acompañamos en tu proceso terapéutico.</p>
-        </div>
-        <div class="card5">
-          <img src="./src/img/anacampos2.png" class="imgw5" alt="Crecimiento" height="250px" width="250px">
-          <p class="p5">Proporcionamos recursos para tu desarrollo personal.</p>
-        </div>
-        <div class="card5">
-          <img src="./src/img/anacampos3.png" class="imgw5" alt="lazos amistad" height="250px" width="250px">
-          <p class="p5">Establecemos lazos de complicidad.</p>
-        </div>
-      </div>
-    </div>
-    <!---------------------------------ARTICLE---------------AQUI EMPIEZA EL CODIGO DE BRENDA.-------------------------------------------------->
-    <div class="container6">
-      <div>
-        <h1>Busca tu terapeuta</h1>
-        <p class="texto">
-          ¿Te sientes mal, abatida, desilusionada? <br>
-          ¿Estás pasando un periodo de crisis o conflicto <br>
-          y crees que necesitas la ayuda de una psicóloga?</p>
-      </div>
-      <div>
-        <button class="btn"><a href="./contacto.html">PIDE UNA CITA</a></button>
-      </div>
-    </div>
-    <div>
-      <img src="SRC/img/Formulario.jpg" alt="" width="500px" height="450px" class="imgw6">
-    </div>
-
-  </article>
-  <footer class="footer" id="reso">
-    <h1>Recursos con certificación</h1>
-    <div class="container8">
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="/./SRC/img/Diseño web.png" alt="Imagen 1">
-        </div>
-        <div class="card8-info">
-          <h2>Diseño web</h2>
-          <p>Diseña tus paginas web </p>
-        </div>
-      </div>
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="/./SRC/img/Peluqería.jpg" alt="Imagen 2">
-        </div>
-        <div class="card8-info">
-          <h2>Alta Peluqueria</h2>
-          <p>Cursos de corte y alta peluqueria</p>
-        </div>
-      </div>
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="/./SRC/img/Medicina alternativa.jpg" alt="Imagen 3">
-        </div>
-        <div class="card8-info">
-          <h2>Medicina alternativa</h2>
-          <p>Aprende botanica y medicina y medicina alternativa a lado de nuestros expertos .</p>
-        </div>
-      </div>
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="./SRC/img/Diseño textil.jpg" alt="Imagen 1">
-        </div>
-        <div class="card8-info">
-          <h2>Corte y diseño textil</h2>
-          <p>Diseño y costura en corte y confeccion de prendas textiles .</p>
-        </div>
-      </div>
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="./SRC/img/Repostería.jpg" alt="Imagen 1">
-        </div>
-        <div class="card8info">
-          <h2>Reposteria</h2>
-          <p>Preparacion de reposteria gourmet.</p>
-        </div>
+  <!-- CONTENEDOR 3: SKILLS, TECNOLOGÍAS Y HERRAMIENTAS -->
+  <div id="container-sk">
+    <div class="card" style="border-radius: 20px">
+      <div class="card-header" id="skills">
+        <h3>Skills</h3>
+        <p>Como desarrolladora web, cuento con un amplio repertorio de competencias y conocimientos para materializar
+          sus ideas de diseño web.</p>
       </div>
 
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="./SRC/img/Enfermería.jpg" alt="Imagen 1">
+      <div class="card-body" id="body-sk">
+
+        <div class="row align-items-center animate__animated animate__bounceInLeft">
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card align-items-center" id="cards-sk">
+              <img src="src/img/principios.png" style="width: 40px; height: 40px;">
+              <h9 id="tit-sk"><b>Principios del diseño web</b></h9>
+              <p class="card-text">Dominio de los principios fundamentales del diseño, como la maquetación, la teoría
+                del color, la tipografía y la jerarquía visual.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card align-items-center" id="cards-sk">
+              <img src="src/img/interfaz.png" style="width: 40px; height: 40px;">
+              <h9 id="tit-sk"><b>Interfaz de usuario - Diseño UX</b></h9>
+              <p class="card-text">Capacidad para crear interfaces de usuario visualmente atractivas e intuitivas que
+                mejoren la experiencia y el compromiso del usuario.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card align-items-center" id="cards-sk">
+              <img src="src/img/usuario.png" style="width: 40px; height: 40px;">
+              <h9 id="tit-sk"><b>Experiencia del usuario - Diseño UX</b></h9>
+              <p class="card-text">Comprensión del comportamiento y la psicología del usuario para diseñar experiencias
+                de usuario fluidas y agradables que satisfagan sus necesidades y objetivos.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card align-items-center" id="cards-sk">
+              <img src="src/img/responsivo.png" style="width: 40px; height: 40px;">
+              <h9 id="tit-sk"><b>Diseño web responsivo</b></h9>
+              <p class="card-text">Conocimiento del diseño de sitios web que se adaptan y funcionan a la perfección en
+                distintos dispositivos y tamaños de pantalla.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card align-items-center" id="cards-sk">
+              <img src="src/img/wireframing.png" style="width: 40px; height: 40px;">
+              <h9 id="tit-sk"><b>Wireframing y creación de prototipos</b></h9>
+              <p class="card-text">Habilidad para crear wireframes y prototipos interactivos para visualizar y probar
+                diseños y funcionalidades de sitios web.</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <div class="card align-items-center" id="cards-sk">
+              <img src="src/img/movil.png" style="width: 40px; height: 40px;">
+              <h9 id="tit-sk"><b>Optimización para móviles</b></h9>
+              <p class="card-text">Dominio de los principios fundamentales del diseño, como la maquetación, la teoría
+                del color, la tipografía y la jerarquía visual.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+            <div class="card" id="tec-sk">
+              <h5>Tecnologías y Herramientas</h5>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card align-items-center">
+              <div class=" ajo image-row">
+                <img src="src/img/html.png" style="width: 40px; height: 40px;">
+                <img src="src/img/css.png" style="width: 40px; height: 40px;">
+                <img src="src/img/bootstrap.png" style="width: 40px; height: 40px;">
+                <img src="src/img/js.png" style="width: 40px; height: 40px;">
+              </div>
+              <div class="ajo image-row">
+                <img src="src/img/java.png" style="width: 40px; height: 40px;">
+                <img src="src/img/react.png" style="width: 40px; height: 40px;">
+                <img src="src/img/sql.png" style="width: 40px; height: 40px;">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card align-items-center">
+              <div class="ajo image-row">
+                <img src="src/img/vsc.png" style="width: 40px; height: 40px;">
+                <img src="src/img/git.png" style="width: 40px; height: 40px;">
+                <img src="src/img/trello.png" style="width: 40px; height: 40px;">
+              </div>
+              <div class="ajo image-row">
+                <img src="src/img/figma.png" style="width: 40px; height: 40px;">
+                <img src="src/img/mysql.png" style="width: 40px; height: 40px;">
+                <img src="src/img/eclipse.png" style="width: 40px; height: 40px;">
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="card5-info">
-          <h2>Enfermeria</h2>
-          <p>Cuidado y venoclisis.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR 4: PROYECTOS (CARRUSEL) -->
+  <div id="container-me">
+    <div class="card" style="border-radius: 20px">
+      <div class="card-header" id="proyectos">
+        <h3>Proyectos</h3>
+        <p>Algunos de los trabajos que he hecho y en los que he participado.</p>
+      </div>
+
+      <div class="card-body" id="body-carr">
+
+        <input type="radio" name="position" checked />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <input type="radio" name="position" />
+        <main id="carousel">
+          <div class="item">
+            <h3 id="titulo">Centro Comunitario Ganesh</h3>
+            <div>
+              <img src="src/img/ccg.png" id="img-proy" alt="" width="250px" height="300px">
+              <button type="button" class="btn btn-light" id="btn-verp">Ver proyecto &#10230</button>
+            </div>
+          </div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </main>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTENEDOR 5: CONTACTO -->
+  <div id="container-cont">
+    <div class="card" style="border-radius: 20px">
+      <div class="card-header" id="contacto">
+        <h3>Contacto</h3>
+      </div>
+
+      <div class="card-body" id="body-cont">
+        <h3 id="tituloContacto">¡Contacta conmigo!</h3>
+        <form id="formContacto" name="formC">
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="txtNombre" class="form-label" name="txtNombre"></label>
+                <input type="text" class="form-control" id="txtNombre" placeholder="Nombre..." required="">
+              </div>
+            <div id="alertValidaNombre" style="color: red;">
+              <p id="alertNombre" style="display: none;"></p>
+            </div>
+              <div class="form-group ">
+                <label for="txtEmail" class="form-label" name="txtEmail"></label>
+                <input type="email" class="form-control" id="txtEmail" placeholder="Correo electrónico..." required="">
+              </div>
+              <div id="alertValidaEmail" style="color: red;">
+                <p id="alertEmail" style="display: none;"></p>
+              </div>
+              <div class="form-group">
+                <label for="txtPhone" class="form-label" name="txtPhone"></label>
+                <input type="text" class="form-control" id="txtPhone" placeholder="Número telefónico..." maxlength="10" required="">
+              </div>
+              <div id="alertValidaPhone" style="color: red;">
+                <p id="alertPhone" style="display: none;"></p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="txtMensaje" class="form-label" name="txtMensaje"></label>
+                <textarea class="form-control" id="txtMensaje" placeholder="Escribe aquí el mensaje..." rows="6" required=""></textarea>
+              </div>
+            </div>
+            <div id="alertValidaMensaje" style="color: red;">
+              <p id="alertMensaje" style="display: none;"></p>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-light d-grid gap-2 col-6 mx-auto" id="btnEnviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="row gx-0">
+    <footer id="footer">
+      <div class="card mt-3" id="card-footer">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <div class="card-body">
+              <h5 class="card-title" id="footer-titulos">Ana Cristina Hernández.</h5>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="card-body">
+              <ul class="nav justify-content-center border-botton">
+                <li class="nav-item"><a href="#inicio" class="nav-link px-2">Inicio</a></li>
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link px-2">Sobre Mí</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link px-2">Skills</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link px-2">Proyectos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link px-2">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card-body text-center text-lg-end" id="iconos-footer">
+              <a href="https://www.linkedin.com/in/anachernandezmoreno/">
+                <img src="src/img/linkedin.png" style="width: 40px; height: 40px;">
+              </a>
+              <a href="https://github.com/anachm">
+                <img src="src/img/github.png" style="width: 40px; height: 40px;">
+              </a>
+              <a href="mailto:hernandezmorenoanacristina@gmail.com">
+                <img src="src/img/gmail.png" style="width: 40px; height: 40px;">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="./SRC/img/Focos.jpg" alt="Imagen 1">
-        </div>
-        <div class="card5-info">
-          <h2>Introducion al emprendimiento</h2>
-          <p>Desenvuelvete en un entorno preferente con tus propios recursos.</p>
+      <div class="card" id="card-foot">
+        <div class="row gx-0">
+          <div class=col-12">
+            <div class="text-center">
+              <ul class="nav flex-columnn flex-md-row justify-content-center border-botton">
+                <li class="nav-item py-3 card-body-text">✉ hernandezmorenoanacristina@gmail.com &nbsp;|</li>
+                <li class="nav-item py-3">&nbsp; ✆ +525566095254 &nbsp;|</li>
+                <li class="nav-item py-3">&nbsp; 🝯 CDMX, México</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="container-cards8">
-        <div class="card8">
-          <img class=imgw6 src="./SRC/img/crianza.png" alt="Imagen 1">
-        </div>
-        <div class="card8-info">
-          <h2>Crianza y cuidado</h2>
-          <p>Te damos una induccion de como orientar a tus pequeñines .</p>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="footer5">
-      "Lo que haces hace una diferencia y tienes que decidir qué tipo de diferencia quieres hacer." Jane Goodall
-    </div>
-  </footer>
+      <p class="text-center py-4 mb-0">Copyright© 2023 Ana Cristina Hernández. Derechos reservados.</p>
+    </footer>
+  </div>
+
+     <!-- EMAIL JS -->
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+     <script type="text/javascript">
+     emailjs.init('NvFI86mY5dCku8FVZ')
+    </script>
+ 
+ 
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+ 
+      <!-- SCRIPT PARA SWEET ALERT -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+     <!-- SWIPER JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ 
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+     <script src="js/main.js"></script>
+     <!-- <script src="js/validaciones.js"></script> -->
+     <!-- <script defer src="js/prueba.js"></script> -->
+
 </body>
 
 </html>
