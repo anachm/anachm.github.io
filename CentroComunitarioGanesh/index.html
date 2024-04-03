@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/FINAL.css">
+
+  <title>Centro Comunitario Ganesh</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100%;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    .grid-container>* {
+      text-align: center;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    .header {
+      grid-area: header;
+
+    }
+
+    .navbar {
+      grid-area: navbar;
+
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+
+    }
+
+    .main {
+      grid-area: main;
+
+    }
+
+    .footer {
+      grid-area: footer;
+
+    }
+
+    /*Teléfono*/
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      grid-template-areas:
+        "header"
+        "navbar"
+        "sidebar"
+        "main"
+        "footer"
+      ;
+    }
+
+    /*Para tablet*/
+    @media(min-width:768px) {
+      .grid-container {
+        grid-template-columns: auto;
+        grid-template-areas:
+          "header header"
+          "navbar navbar"
+          "sidebar sidebar"
+          "main main"
+          "footer footer";
+      }
+    }
+
+    /*Para escritorio*/
+    @media(min-width:900px) {
+      .grid-container {
+        grid-template-columns: auto;
+        grid-template-areas:
+          "header header header"
+          "navbar navbar navbar"
+          "sidebar sidebar sidebar"
+          "main main main"
+          "footer footer footer";
+      }
+    }
+  </style>
+</head>
+
+<body class="grid-container">
+  <header class="header">
+    <div class="logo ">
+      <img
+        src="SRC/img/logo ganesh.png"
+        width="200px">
+      <h1>CENTRO COMUNITARIO GANESH </h1>
+    </div>
+  </header>
+  <nav class="navbar">
+    <a href="" class="ln">Inicio</a>
+    <a href="#somosquien" class="ln"> ¿Quienes somos?</a>
+    <a href="#reso" class="ln"> Recursos</a>
+  </nav>
+  <aside class="sidebar">
+    <div class="cards">
+      <div class="card1">
+        <img class=imgw6
+          src="https://img.freepik.com/vector-gratis/fondo-plano-dia-amistad-grupo-amigos_23-2149481321.jpg?size=626&ext=jpg&ga=GA1.1.1016474677.1697068800&semt=ais"
+          width="450px" height="250px">
+        <img class=imgw6
+          src="https://www.unotv.com/uploads/2023/03/por-que-no-se-debe-felicitar-a-las-mujeres-el-8m-081756.jpg"
+          width="450px">
+      </div>
+      <div class="card2">
+        <p>Se trabaja con un equipo multidisciplinario de profesionales desde mayo de 2013 y continúa a la fecha.
+
+          A través del análisis de la historia del Dispositivo y de la construcción de un diagnóstico territorial, se
+          presentó la necesidad de que exista un Dispositivo en el barrio que se posicione desde el enfoque de la
+          perspectiva de género.
+
+          Se implementa una estrategia de Intervención Comunitaria que tiene como objetivo abordar el sufrimiento
+          social, en particular de aquellas mujeres que se encuentran asociadas a situaciones de violencia, embarazo
+          adolescente, consumo de sustancias psicoactivas, o que presentan dificultades en la accesibilidad a la
+          educación y/o salud. La intervención se orienta a la promoción del fortalecimiento individual y grupal de las
+          mujeres.
+
+          El espacio promueve la integración social de las mujeres, el fortalecimiento de sus redes subjetivas, así como
+          sus habilidades psicosociales, mejorando de esta manera su calidad de vida y la de la comunidad. Se
+          desarrollan actividades de promoción de la salud, de prevención y de reducción de riesgos y daños. </p>
+      </div>
+    </div>
+  </aside>
+
+  <article class="main">
+    <h1 id="somosquien">¿Quiénes somos?</h1>
+    <div class="container4">
+      <div class="card4">
+        <div>
+          <img class="imgw4" src="./SRC/img/Misión.png" alt="" width="300px" height="250px">
+
+          <div class="info4">
+            <h2>Misión</h2>
+            <p>Ayudar a mujeres vulnerables que hayan sufrido violencia a desarrollarse y encontrar mejores
+              oportunidades.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="card4">
+        <div>
+          <img class="imgw4" src="./SRC/img/Visión.png" alt="" width="300px" height="250px">
+        </div>
+        <div class="info4">
+          <h2>Visión</h2>
+          <p>Encontrar nuevas oportunidades que les permitirá mejorar su calidad de vida y
+            favorecerá su integración social.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container5">
+      <h1>¿Qué hacemos?</h1>
+      <div class="container5">
+        <div class="card5">
+          <img src="./src/img/anacampos1.png" class="imgw5" alt="Proceso terapeutico" height="250px" width="250px">
+          <p class="p5">Te acompañamos en tu proceso terapéutico.</p>
+        </div>
+        <div class="card5">
+          <img src="./src/img/anacampos2.png" class="imgw5" alt="Crecimiento" height="250px" width="250px">
+          <p class="p5">Proporcionamos recursos para tu desarrollo personal.</p>
+        </div>
+        <div class="card5">
+          <img src="./src/img/anacampos3.png" class="imgw5" alt="lazos amistad" height="250px" width="250px">
+          <p class="p5">Establecemos lazos de complicidad.</p>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------ARTICLE---------------AQUI EMPIEZA EL CODIGO DE BRENDA.-------------------------------------------------->
+    <div class="container6">
+      <div>
+        <h1>Busca tu terapeuta</h1>
+        <p class="texto">
+          ¿Te sientes mal, abatida, desilusionada? <br>
+          ¿Estás pasando un periodo de crisis o conflicto <br>
+          y crees que necesitas la ayuda de una psicóloga?</p>
+      </div>
+      <div>
+        <button class="btn"><a href="./contacto.html">PIDE UNA CITA</a></button>
+      </div>
+    </div>
+    <div>
+      <img src="SRC/img/Formulario.jpg" alt="" width="500px" height="450px" class="imgw6">
+    </div>
+
+  </article>
+  <footer class="footer" id="reso">
+    <h1>Recursos con certificación</h1>
+    <div class="container8">
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="/./SRC/img/Diseño web.png" alt="Imagen 1">
+        </div>
+        <div class="card8-info">
+          <h2>Diseño web</h2>
+          <p>Diseña tus paginas web </p>
+        </div>
+      </div>
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="/./SRC/img/Peluqería.jpg" alt="Imagen 2">
+        </div>
+        <div class="card8-info">
+          <h2>Alta Peluqueria</h2>
+          <p>Cursos de corte y alta peluqueria</p>
+        </div>
+      </div>
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="/./SRC/img/Medicina alternativa.jpg" alt="Imagen 3">
+        </div>
+        <div class="card8-info">
+          <h2>Medicina alternativa</h2>
+          <p>Aprende botanica y medicina y medicina alternativa a lado de nuestros expertos .</p>
+        </div>
+      </div>
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="./SRC/img/Diseño textil.jpg" alt="Imagen 1">
+        </div>
+        <div class="card8-info">
+          <h2>Corte y diseño textil</h2>
+          <p>Diseño y costura en corte y confeccion de prendas textiles .</p>
+        </div>
+      </div>
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="./SRC/img/Repostería.jpg" alt="Imagen 1">
+        </div>
+        <div class="card8info">
+          <h2>Reposteria</h2>
+          <p>Preparacion de reposteria gourmet.</p>
+        </div>
+      </div>
+
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="./SRC/img/Enfermería.jpg" alt="Imagen 1">
+        </div>
+        <div class="card5-info">
+          <h2>Enfermeria</h2>
+          <p>Cuidado y venoclisis.</p>
+        </div>
+      </div>
+
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="./SRC/img/Focos.jpg" alt="Imagen 1">
+        </div>
+        <div class="card5-info">
+          <h2>Introducion al emprendimiento</h2>
+          <p>Desenvuelvete en un entorno preferente con tus propios recursos.</p>
+        </div>
+      </div>
+
+      <div class="container-cards8">
+        <div class="card8">
+          <img class=imgw6 src="./SRC/img/crianza.png" alt="Imagen 1">
+        </div>
+        <div class="card8-info">
+          <h2>Crianza y cuidado</h2>
+          <p>Te damos una induccion de como orientar a tus pequeñines .</p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="footer5">
+      "Lo que haces hace una diferencia y tienes que decidir qué tipo de diferencia quieres hacer." Jane Goodall
+    </div>
+  </footer>
+</body>
+
+</html>

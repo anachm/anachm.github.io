@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/SRC/IAB-PNG (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/FINAL.css">
+    <title>Contacto</title>
+    <style>
+
+        .grid-container > *{
+           text-align: center;
+           border-radius: 15px;
+           padding: 10px;
+           align-items: center;
+        }
+        .main{
+            grid-area: main;
+            background-color: rgba(206, 237, 226, 0.69);
+            align-items: center;
+        }
+        
+        /*Teléfono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+            "header"
+            "navbar"
+            "main"
+            "sidebar"
+            "footer"
+            ;
+        }
+        /*Para tablet*/
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: 200px auto ;
+                grid-template-rows: 100px 50px auto 100px;
+                grid-template-areas: 
+                "header header"
+                "navbar navbar"
+                "main main"
+                "footer footer";
+            }
+        }
+        /*Para escritorio*/
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: 200px auto ;
+                grid-template-rows: 100px 50px auto 100px;
+                grid-template-areas: 
+                "header header header"
+                "navbar navbar navbar"
+                "main main main"
+                "footer footer footer";
+            }
+       
+
+        }
+
+    </style>
+</head>
+<body class="grid-container">
+    <article class="main">
+
+        <form>
+
+        <p> Necesito acompañamiento psicológico </p>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" required> <br><br>
+
+        <label for="location">Lugar de residencia:</label>
+        <input type="text" id="location" name="location" required> <br><br>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required> <br><br>
+
+        </form>
+        
+        <input type="button" id="button" value="Enviar" <!-- Botón de enviar-->
+    </article>
+   
+</body>
+</html>
